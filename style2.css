@@ -1,0 +1,330 @@
+/* style2.css - CG Mobile Solutions */
+:root {
+    --primary: #1976D2;
+    --primary-dark: #1565C0;
+    --secondary: #2E7D32;
+    --secondary-dark: #1B5E20;
+    --dark: #1e293b;
+    --gray-600: #475569;
+    --gray-400: #94a3b8;
+    --gray-200: #e2e8f0;
+    --gray-100: #f1f5f9;
+    --light: #f8fafc;
+    --white: #ffffff;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ----- HEADER ----- */
+header {
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-100) 100%);
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--gray-200);
+    text-align: center;
+}
+
+.profile-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.profile-sub {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    font-weight: 400;
+}
+
+/* ----- SEÇÃO HISTÓRIA ----- */
+.history-section {
+    background: var(--white);
+    padding: 48px;
+    margin: 48px 0;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-200);
+    transition: transform 0.2s;
+}
+
+.history-section:hover {
+    transform: translateY(-2px);
+}
+
+.history-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    border-left: 6px solid var(--primary);
+}
+
+.history-section p {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    max-width: 800px;
+}
+
+.history-section p:last-of-type {
+    margin-top: 20px;
+}
+
+.highlight {
+    font-weight: 600;
+    color: var(--primary);
+    background: rgba(25, 118, 210, 0.08);
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+/* ----- GRADE DE APPS ----- */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 32px;
+    margin: 48px 0 64px;
+}
+
+.app-card {
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.app-header {
+    padding: 24px 24px 16px;
+}
+
+.app-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Cores específicas para cada app */
+.app-card:first-child .app-header h3 {
+    color: var(--primary);
+}
+
+.app-card:last-child .app-header h3 {
+    color: var(--secondary);
+}
+
+.app-content {
+    padding: 0 24px 24px;
+    flex-grow: 1;
+}
+
+/* ----- MOCKUPS DAS TELAS (COM IMAGENS REAIS) ----- */
+.screenshot-box {
+    width: 100%;
+    height: 400px;
+    background: var(--gray-100);
+    margin: 16px 0 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gray-200);
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.screenshot-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Mantém a proporção sem cortar */
+    object-position: center;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.app-card:hover .screenshot-box img {
+    transform: scale(1.02);
+}
+
+/* Tratamento especial para a imagem do Remédio (remover fundo branco via CSS) */
+.app-card:first-child .screenshot-box img {
+    /* Remove fundo branco com mix-blend-mode */
+    mix-blend-mode: multiply;
+    background-color: transparent;
+    
+    /* Fallback para navegadores que não suportam mix-blend-mode */
+    filter: brightness(1.05) contrast(1.1);
+    
+    /* Garante que o fundo do container mostre o gradiente */
+    background: transparent;
+}
+
+/* Ajuste específico para a imagem do Remédio */
+.app-card:first-child .screenshot-box {
+    background: linear-gradient(145deg, #e3f2fd, #bbdef5); /* fundo azul suave que combina */
+}
+
+/* App Respira - sem modificações */
+.app-card:last-child .screenshot-box {
+    background: linear-gradient(145deg, #e8f5e9, #c8e6c9); /* fundo verde suave */
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(25, 118, 210, 0.08);
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: 40px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.app-card:last-child .tag {
+    background: rgba(46, 125, 50, 0.08);
+    color: var(--secondary);
+}
+
+.app-content p {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ----- BOTÕES ----- */
+.btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 20px 24px 24px;
+    background: var(--gray-100);
+    border-top: 1px solid var(--gray-200);
+}
+
+.btn {
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid transparent;
+}
+
+.btn-store {
+    background: var(--primary);
+    color: white;
+}
+
+.app-card:last-child .btn-store {
+    background: var(--secondary);
+}
+
+.btn-store:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+
+.btn-legal {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    color: var(--gray-600);
+}
+
+.btn-legal:hover {
+    background: var(--gray-200);
+    border-color: var(--gray-400);
+    color: var(--dark);
+}
+
+/* ----- FOOTER ----- */
+footer {
+    text-align: center;
+    padding: 48px 0 40px;
+    color: var(--gray-400);
+    font-size: 0.95rem;
+    border-top: 1px solid var(--gray-200);
+    background: var(--white);
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+.footer-name {
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+/* ----- RESPONSIVO ----- */
+@media (max-width: 768px) {
+    .profile-title { font-size: 2.5rem; }
+    .history-section { padding: 32px 24px; }
+    .history-section h2 { font-size: 1.8rem; }
+    .apps-grid { grid-template-columns: 1fr; }
+    .btn-group { grid-template-columns: 1fr; }
+    .screenshot-box { height: 350px; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 16px; }
+    .profile-title { font-size: 2rem; }
+    .app-header h3 { font-size: 1.5rem; }
+    .screenshot-box { height: 300px; }
+}
+
+/* Suporte para navegadores mais antigos */
+@supports not (mix-blend-mode: multiply) {
+    .app-card:first-child .screenshot-box img {
+        opacity: 0.95;
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+    }
+}
