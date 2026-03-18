@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-        /* Pequeno ajuste para destacar alertas médicos */
         .alert-box {
             background-color: #fff3cd;
             border-left: 5px solid #ffc107;
@@ -41,6 +40,7 @@
 
     <nav class="nav">
         <a href="#termos">Termos de Uso</a>
+        <a href="#pagamentos">Pagamentos</a>
         <a href="#privacidade">Privacidade (LGPD)</a>
         <a href="#exclusao">Exclusão de Dados</a>
         <a href="#contato">Contato</a>
@@ -48,6 +48,7 @@
 
     <main class="container">
 
+        <!-- 1 -->
         <section id="termos" class="legal-section">
             <h2>1. Termos de Uso e Limitação de Responsabilidade</h2>
             <p>Ao baixar e utilizar o aplicativo <strong>Remédio Certo</strong>, você concorda expressamente com os
@@ -56,105 +57,112 @@
             <div class="alert-box">
                 <strong>⚠️ IMPORTANTE: SUAS OBRIGAÇÕES</strong><br>
                 O Remédio Certo é uma ferramenta de apoio. <strong>O usuário é o único responsável</strong> por tomar
-                sua medicação. Falhas tecnológicas acontecem. Se o alarme não tocar, a responsabilidade pela ingestão do
-                medicamento continua sendo do paciente/cuidador.
+                sua medicação. Falhas tecnológicas podem ocorrer. Caso o alarme não seja acionado por qualquer motivo,
+                a responsabilidade pela ingestão do medicamento permanece sendo do paciente ou cuidador.
             </div>
 
             <h3>1.1. Permissões e Funcionamento Técnico</h3>
-            <p>Para que o aplicativo funcione, é <strong>obrigatório</strong> que o usuário conceda as permissões de:
-            </p>
+            <p>Para o funcionamento adequado, é necessário conceder permissões como:</p>
             <ul>
-                <li><strong>Alarmes e Lembretes (Schedule Exact Alarm);</strong></li>
+                <li><strong>Alarmes e Lembretes;</strong></li>
                 <li><strong>Notificações;</strong></li>
-                <li><strong>Sobreposição de Tela (opcional, mas recomendado).</strong></li>
+                <li><strong>Sobreposição de Tela (opcional).</strong></li>
             </ul>
-            <p><strong>Atenção:</strong> Se o usuário negar essas permissões, ativar o modo "Não Perturbe", "Economia de
-                Bateria" ou utilizar aplicativos de limpeza de memória (Task Killers), <strong>o alarme poderá
-                    falhar</strong>. O desenvolvedor não se responsabiliza por omissões de doses causadas por
-                configurações restritivas do aparelho do usuário.</p>
 
-            <h3>1.2. Otimização de Bateria (Samsung, Xiaomi, etc.)</h3>
-            <p>Alguns fabricantes de celular "matam" aplicativos em segundo plano para economizar bateria. É dever do
-                usuário garantir que o Remédio Certo esteja na lista de exceções de economia de bateria do seu aparelho
-                para garantir o funcionamento do despertador.</p>
+            <p><strong>Atenção:</strong> Configurações como modo "Não Perturbe", economia de bateria ou aplicativos de
+                otimização podem impedir o funcionamento correto dos alarmes.</p>
+
+            <h3>1.2. Otimização de Bateria</h3>
+            <p>Alguns dispositivos restringem apps em segundo plano. É responsabilidade do usuário configurar exceções
+                para garantir o funcionamento adequado.</p>
         </section>
 
+        <!-- 2 -->
+        <section id="pagamentos" class="legal-section">
+            <h2>2. Pagamentos, Assinaturas e Cancelamento</h2>
+
+            <p>O aplicativo oferece recursos gratuitos e pagos.</p>
+
+            <h3>2.1. Planos Disponíveis</h3>
+            <ul>
+                <li><strong>Plano Vitalício:</strong> pagamento único com acesso permanente;</li>
+                <li><strong>Assinaturas:</strong> planos mensal e anual com renovação automática.</li>
+            </ul>
+
+            <h3>2.2. Processamento</h3>
+            <p>Todas as compras são processadas pela <strong>Google Play</strong>. O desenvolvedor não tem acesso a
+                dados financeiros.</p>
+
+            <h3>2.3. Renovação Automática</h3>
+            <p>As assinaturas são renovadas automaticamente ao final de cada período, salvo cancelamento.</p>
+
+            <h3>2.4. Cancelamento</h3>
+            <p>O cancelamento deve ser feito diretamente pela <strong>Google Play</strong>:</p>
+            <p><em>Google Play &gt; Pagamentos e Assinaturas &gt; Assinaturas</em></p>
+
+            <p>O acesso continua até o fim do período pago.</p>
+
+            <h3>2.5. Reembolsos</h3>
+            <p>Reembolsos seguem exclusivamente as políticas da <strong>Google Play</strong>.</p>
+
+            <h3>2.6. Alterações</h3>
+            <p>Os preços podem ser alterados, sendo informados previamente pela plataforma.</p>
+        </section>
+
+        <!-- 3 -->
         <section id="privacidade" class="legal-section">
-            <h2>2. Política de Privacidade</h2>
-            <p>Em conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018)</strong> e as
-                diretrizes de segurança da Google Play, detalhamos como seus dados são tratados.</p>
+            <h2>3. Política de Privacidade (LGPD)</h2>
 
-            <h3>2.1. Modelo de Armazenamento (Offline-First)</h3>
-            <p>O Remédio Certo adota uma política de <strong>Privacidade por Design</strong>. Diferente de outros
-                aplicativos, nós <strong>NÃO</strong> possuímos servidores, bancos de dados em nuvem ou sistemas de
-                login.</p>
-            <p><strong>Todos os dados</strong> inseridos (nomes de medicamentos, fotos, horários, histórico de consumo)
-                são gravados exclusivamente no banco de dados local (SQLite) dentro do seu próprio dispositivo. Nós,
-                desenvolvedores, não temos acesso técnico a essas informações.</p>
+            <p>O aplicativo segue os princípios da Lei nº 13.709/2018 (LGPD).</p>
 
-            <h3>2.2. Uso de Permissões do Android</h3>
-            <p>Para o funcionamento correto, o aplicativo solicita as seguintes permissões estritamente necessárias:</p>
+            <h3>3.1. Armazenamento</h3>
+            <p>Todos os dados são armazenados localmente no dispositivo do usuário. Não utilizamos servidores externos.</p>
+
+            <h3>3.2. Permissões</h3>
             <ul>
-                <li><strong>Notificações (POST_NOTIFICATIONS):</strong> Necessária para exibir os alertas de hora de
-                    tomar o remédio.</li>
-                <li><strong>Alarmes Exatos (SCHEDULE_EXACT_ALARM):</strong> Necessária para garantir que o alarme toque
-                    no minuto exato, mesmo se o celular estiver em repouso.</li>
-                <li><strong>Sobreposição de Tela (SYSTEM_ALERT_WINDOW):</strong> Opcional. Permite que o alarme apareça
-                    sobre outros apps quando tocar.</li>
-                <li><strong>Câmera e Armazenamento:</strong> Utilizadas apenas se o usuário optar por tirar foto da
-                    caixa do remédio. A imagem permanece salva apenas localmente.</li>
+                <li>Notificações</li>
+                <li>Alarmes</li>
+                <li>Sobreposição de tela (opcional)</li>
+                <li>Câmera (opcional)</li>
             </ul>
 
-            <h3>2.3. Coleta de Dados Pessoais</h3>
-            <p>O aplicativo <strong>não coleta</strong>:</p>
-            <ul>
-                <li>Dados de localização (GPS);</li>
-                <li>Identificadores de publicidade (Advertising ID);</li>
-                <li>Dados de saúde para envio externo.</li>
-            </ul>
+            <h3>3.3. Coleta de Dados</h3>
+            <p>O aplicativo não coleta dados pessoais para envio externo.</p>
         </section>
 
+        <!-- 4 -->
         <section id="exclusao" class="legal-section">
-            <h2>3. Exclusão de Dados</h2>
-            <p>Como não mantemos contas de usuário ou servidores centrais, o usuário possui total soberania sobre seus
-                dados.</p>
+            <h2>4. Exclusão de Dados</h2>
 
-            <h3>Para excluir definitivamente suas informações:</h3>
+            <p>Todos os dados ficam sob controle do usuário.</p>
+
             <ol>
-                <li><strong>Método Simples:</strong> Desinstale o aplicativo do seu celular. O sistema operacional
-                    Android excluirá automaticamente todo o banco de dados e arquivos associados.</li>
-                <li><strong>Método Manual:</strong> Acesse <em>Configurações > Aplicativos > Remédio Certo >
-                        Armazenamento > Limpar Dados</em>.</li>
+                <li>Desinstalar o aplicativo;</li>
+                <li>Ou limpar os dados nas configurações do Android.</li>
             </ol>
-            <p>Não é necessário enviar e-mail solicitando a exclusão, pois tecnicamente não possuímos acesso aos seus
-                dados para apagá-los remotamente.</p>
         </section>
 
+        <!-- 5 -->
         <section id="contato">
-            <h2>4. Contato e Encarregado de Dados</h2>
-            <p>Para dúvidas sobre esta política, reportar bugs ou sugestões de melhoria:</p>
+            <h2>5. Contato</h2>
             <p><strong>Desenvolvedor:</strong> Carlos Germano Gasparelho de Souza</p>
             <p><strong>E-mail:</strong> <a href="mailto:contatocarger@gmail.com">contatocarger@gmail.com</a></p>
         </section>
 
+        <!-- 6 -->
         <section id="juridico" class="legal-section">
-            <h2>5. Legislação Aplicável e Foro</h2>
-            <p>Estes Termos de Uso e Política de Privacidade são regidos pelas leis da <strong>República Federativa do
-                    Brasil</strong>, incluindo a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
-            <p>Ao utilizar o aplicativo em qualquer lugar do mundo, o usuário concorda expressamente que qualquer
-                disputa ou controvérsia decorrente do uso deste software será resolvida exclusivamente no foro da
-                comarca de residência do desenvolvedor (Brasil), renunciando a qualquer outro, por mais privilegiado que
-                seja.</p>
+            <h2>6. Legislação e Foro</h2>
+
+            <p>Regido pelas leis brasileiras.</p>
+
+            <p>Fica eleito o foro da comarca do desenvolvedor para resolução de conflitos.</p>
         </section>
 
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Carlos Germano Gasparelho de Souza.</p>
-            <p style="font-size: 0.9em; margin-top: 10px;">
-                <!-- <a href="index.html" style="color: #666; text-decoration: none;">&larr; Voltar para a Home</a> -->
-            </p>
+            <p>&copy; 2026 Carlos Germano </p>
         </div>
     </footer>
 
