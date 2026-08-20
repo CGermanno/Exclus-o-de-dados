@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Carlos Germano, desenvolvedor de software com projetos mobile publicados, experiências web e formação em Análise e Desenvolvimento de Sistemas.">
+  <meta name="theme-color" content="#0b0f0e">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Carlos Germano — Desenvolvedor de Software">
+  <meta property="og:description" content="Produtos mobile em produção, projetos acadêmicos e experimentos web construídos com foco em problemas reais.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Portfólio de Carlos Germano">
+
+  <title>Carlos Germano — Desenvolvedor de Software</title>
+  <link rel="stylesheet" href="portifolio.style.css">
+  <script src="portifolio.script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Carlos Germano — início">
+        <span>CG</span><i aria-hidden="true">/</i>
+      </a>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#processo">Processo</a>
+        <a class="nav-mobile-contact" href="#contato">Contato</a>
+      </div>
+
+      <a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↘</span></a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span aria-hidden="true"></span> Desenvolvedor de software · Ribeirão Preto, SP</p>
+          <h1 id="hero-title">
+            <span>Carlos Germano</span>
+            <em>Transformo problemas em software utilizável.</em>
+          </h1>
+          <p class="hero-lead">
+            Desenvolvimento mobile, integração Android nativa e experiências web — do protótipo ao produto publicado, com ciclos curtos de evolução.
+          </p>
+
+          <div class="hero-actions" aria-label="Ações principais">
+            <a class="button button--primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
+            <a class="button button--ghost" href="https://github.com/CGermanno" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Carlos Germano em nova aba">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button button--ghost" href="https://br.linkedin.com/in/carlos-germano-gasparelho-de-souza-473849280" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Carlos Germano em nova aba">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <dl class="hero-proof" aria-label="Evidências em destaque">
+            <div>
+              <dt>2</dt>
+              <dd>apps publicados<br>na Google Play</dd>
+            </div>
+            <div>
+              <dt>Flutter ↔ Kotlin</dt>
+              <dd>integração mobile<br>e Android nativo</dd>
+            </div>
+            <div>
+              <dt>2022—25</dt>
+              <dd>ADS na FATEC<br>Ribeirão Preto</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-console" aria-label="Resumo do perfil" data-reveal data-reveal-delay="1">
+          <div class="console-topline">
+            <span>profile.json</span>
+            <div aria-hidden="true"><i></i><i></i><i></i></div>
+          </div>
+          <div class="console-body">
+            <p><span class="code-key">"nome"</span>: <span class="code-string">"Carlos Germano"</span>,</p>
+            <p><span class="code-key">"foco"</span>: [</p>
+            <p class="code-indent"><span class="code-string">"mobile"</span>, <span class="code-string">"produto"</span>,</p>
+            <p class="code-indent"><span class="code-string">"integrações nativas"</span></p>
+            <p>],</p>
+            <p><span class="code-key">"stack"</span>: <span class="code-string">"Flutter · Dart · Kotlin"</span>,</p>
+            <p><span class="code-key">"entrega"</span>: <span class="code-boolean">true</span></p>
+          </div>
+          <div class="console-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Aberto a oportunidades iniciais em desenvolvimento</span>
+          </div>
+          <div class="console-path" aria-hidden="true">
+            <span>problema</span><i>→</i><span>código</span><i>→</i><span>uso real</span>
+          </div>
+        </aside>
+      </div>
+
+      <a class="scroll-cue" href="#sobre">
+        <span>Continue explorando</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="section about" id="sobre" aria-labelledby="sobre-title">
+      <div class="section-shell">
+        <header class="section-heading" data-reveal>
+          <p class="section-index">01 / Sobre</p>
+          <h2 id="sobre-title">Software que sai do editor<br>e encontra pessoas.</h2>
+        </header>
+
+        <div class="about-layout">
+          <p class="about-statement" data-reveal>
+            Sou desenvolvedor de software com formação em Análise e Desenvolvimento de Sistemas e prática concentrada em produtos mobile. Meus projetos mais completos passam por descoberta do problema, implementação, publicação, suporte e melhoria contínua.
+          </p>
+
+          <div class="about-notes">
+            <article class="note-card" data-reveal>
+              <span>01</span>
+              <h3>Produto com propósito</h3>
+              <p>Remédio Certo e Respira nasceram de situações cotidianas: organizar medicamentos e apoiar momentos de ansiedade.</p>
+            </article>
+            <article class="note-card" data-reveal data-reveal-delay="1">
+              <span>02</span>
+              <h3>Engenharia pragmática</h3>
+              <p>Separação de responsabilidades, integração Flutter–Android, persistência local, serviços em background e Firebase quando o produto pede.</p>
+            </article>
+            <article class="note-card" data-reveal data-reveal-delay="2">
+              <span>03</span>
+              <h3>IA com transparência</h3>
+              <p>IA entra no fluxo como pair programmer e agente de apoio. Decisões de produto, testes, validação e responsabilidade final continuam comigo.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos" aria-labelledby="projetos-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading--split" data-reveal>
+          <div>
+            <p class="section-index">02 / Projetos</p>
+            <h2 id="projetos-title">Dois produtos em produção.<br>Outros, laboratório.</h2>
+          </div>
+          <p>Projetos apresentados conforme a maturidade encontrada no código, na documentação e nas lojas — sem nivelar um estudo ao mesmo patamar de um produto publicado.</p>
+        </header>
+
+        <div class="project-list">
+          <article class="project project--featured" id="remedio-certo" aria-labelledby="remedio-title" data-reveal>
+            <div class="project-number" aria-hidden="true">01</div>
+            <div class="project-layout">
+              <div class="project-copy">
+                <div class="project-kicker">
+                  <span class="status status--live"><i aria-hidden="true"></i> Produção · em evolução</span>
+                  <span>Mobile / Android</span>
+                </div>
+                <h3 id="remedio-title">Remédio Certo</h3>
+                <p class="project-summary">Assistente offline para organizar medicamentos e reduzir confusões no horário da dose por meio de alarmes em tela cheia, fotos e identificação visual.</p>
+
+                <dl class="project-facts">
+                  <div>
+                    <dt>Minha participação</dt>
+                    <dd>Produto independente: evolução do fluxo, interface Flutter, estado, persistência, integrações nativas, publicação e manutenção.</dd>
+                  </div>
+                  <div>
+                    <dt>Engenharia</dt>
+                    <dd>Organização em models, repositories, viewmodels, views e services; ponte Flutter ↔ Kotlin; alarmes exatos, receivers, serviço em primeiro plano e reagendamento após reinício.</dd>
+                  </div>
+                  <div>
+                    <dt>Recursos verificados</dt>
+                    <dd>Fotos do medicamento, histórico, voz e áudio, dias da semana, som e vibração configuráveis, fluxo para idoso/cuidador e compras no app.</dd>
+                  </div>
+                </dl>
+
+                <ul class="tech-list" aria-label="Tecnologias do Remédio Certo">
+                  <li>Flutter</li><li>Dart</li><li>Provider</li><li>Armazenamento local</li><li>Kotlin</li><li>AlarmManager</li><li>MethodChannel</li><li>RevenueCat</li>
+                </ul>
+
+                <div class="project-meta">
+                  <div><strong>Offline</strong><span>dados locais</span></div>
+                  <div><strong>10</strong><span>idiomas configurados</span></div>
+                  <div><strong>Google Play</strong><span>publicado</span></div>
+                </div>
+
+                <div class="project-actions">
+                  <a class="text-link" href="https://play.google.com/store/apps/details?id=com.germanno.remedio_certo_app_v1&amp;hl=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Abrir Remédio Certo na Google Play em nova aba">Ver na Google Play <span aria-hidden="true">↗</span></a>
+                  <a class="text-link text-link--muted" href="../remedio.html">Privacidade e termos <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+
+              <div class="project-gallery" data-gallery>
+                <div class="gallery-topline">
+                  <span>Prévia do projeto</span>
+                  <div class="gallery-buttons">
+                    <button type="button" data-gallery-prev aria-label="Mostrar imagem anterior"><span aria-hidden="true">←</span></button>
+                    <button type="button" data-gallery-next aria-label="Mostrar próxima imagem"><span aria-hidden="true">→</span></button>
+                  </div>
+                </div>
+                <div class="gallery-track" data-gallery-track tabindex="0" aria-label="Imagens do Remédio Certo">
+                  <figure class="project-shot">
+                    <!-- Troque apenas o src por remedio-certo-home.png quando a captura estiver pronta. -->
+                    <img src="provisorio.png" alt="Imagem provisória reservada para a tela principal do Remédio Certo" loading="lazy" decoding="async">
+                    <figcaption><span>01</span> Tela principal · imagem provisória</figcaption>
+                  </figure>
+                  <figure class="project-shot">
+                    <!-- Troque apenas o src por remedio-certo-alarme.png quando a captura estiver pronta. -->
+                    <img src="provisorio.png" alt="Imagem provisória reservada para a tela de alarme do Remédio Certo" loading="lazy" decoding="async">
+                    <figcaption><span>02</span> Alarme visual · imagem provisória</figcaption>
+                  </figure>
+                </div>
+                <p class="gallery-hint"><span aria-hidden="true">↔</span> Arraste para navegar</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--featured project--reverse" id="respira-app" aria-labelledby="respira-title" data-reveal>
+            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-layout">
+              <div class="project-copy">
+                <div class="project-kicker">
+                  <span class="status status--live"><i aria-hidden="true"></i> Produção</span>
+                  <span>Mobile / Bem-estar</span>
+                </div>
+                <h3 id="respira-title">Respira App</h3>
+                <p class="project-summary">Aplicativo de apoio para momentos de ansiedade e estresse, combinando respiração guiada, registro de crises, histórico e sons relaxantes.</p>
+
+                <dl class="project-facts">
+                  <div>
+                    <dt>Minha participação</dt>
+                    <dd>Criação, publicação e evolução do produto sob a marca Germano, com canal de suporte e resposta a feedback de usuários.</dd>
+                  </div>
+                  <div>
+                    <dt>Produto</dt>
+                    <dd>Exercícios 4-7-8, respiração nasal e coerente, registro de gatilhos, acompanhamento de sessões e ambiente sonoro personalizável.</dd>
+                  </div>
+                  <div>
+                    <dt>Serviços verificados</dt>
+                    <dd>Autenticação e sincronização com Firebase, histórico associado à conta e dados criptografados em trânsito conforme a ficha da loja.</dd>
+                  </div>
+                </dl>
+
+                <ul class="tech-list" aria-label="Tecnologias e serviços do Respira App">
+                  <li>Android</li><li>Firebase</li><li>Login Google</li><li>Cloud sync</li><li>Notificações</li><li>Áudio</li>
+                </ul>
+
+                <div class="project-meta">
+                  <div><strong>Histórico</strong><span>sessões e crises</span></div>
+                  <div><strong>Cloud</strong><span>sincronização</span></div>
+                  <div><strong>Google Play</strong><span>publicado</span></div>
+                </div>
+
+                <div class="project-actions">
+                  <a class="text-link" href="https://play.google.com/store/apps/details?id=com.carlos.app_respira&amp;hl=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Abrir Respira App na Google Play em nova aba">Ver na Google Play <span aria-hidden="true">↗</span></a>
+                  <a class="text-link text-link--muted" href="../index.html">Política de privacidade <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+
+              <div class="project-gallery" data-gallery>
+                <div class="gallery-topline">
+                  <span>Prévia do projeto</span>
+                  <div class="gallery-buttons">
+                    <button type="button" data-gallery-prev aria-label="Mostrar imagem anterior"><span aria-hidden="true">←</span></button>
+                    <button type="button" data-gallery-next aria-label="Mostrar próxima imagem"><span aria-hidden="true">→</span></button>
+                  </div>
+                </div>
+                <div class="gallery-track" data-gallery-track tabindex="0" aria-label="Imagens do Respira App">
+                  <figure class="project-shot">
+                    <!-- Troque apenas o src por respira-home.png quando a captura estiver pronta. -->
+                    <img src="provisorio.png" alt="Imagem provisória reservada para a tela principal do Respira App" loading="lazy" decoding="async">
+                    <figcaption><span>01</span> Início · imagem provisória</figcaption>
+                  </figure>
+                  <figure class="project-shot">
+                    <!-- Troque apenas o src por respira-respiracao.png quando a captura estiver pronta. -->
+                    <img src="provisorio.png" alt="Imagem provisória reservada para um exercício do Respira App" loading="lazy" decoding="async">
+                    <figcaption><span>02</span> Respiração guiada · imagem provisória</figcaption>
+                  </figure>
+                </div>
+                <p class="gallery-hint"><span aria-hidden="true">↔</span> Arraste para navegar</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-divider" data-reveal>
+          <p class="section-index">Projetos acadêmicos e experimentais</p>
+          <p>Escopo menor, contexto explícito e aprendizados visíveis.</p>
+        </div>
+
+        <div class="project-secondary-grid">
+          <article class="project project--secondary" id="receitas-seu-jeito" aria-labelledby="receitas-title" data-reveal>
+            <div class="project-secondary-copy">
+              <div class="project-kicker">
+                <span class="status status--academic">Acadêmico · protótipo</span>
+                <span>Mobile</span>
+              </div>
+              <h3 id="receitas-title">Receitas do Seu Jeito</h3>
+              <p class="project-summary">TCC em Flutter que explora descoberta de receitas a partir dos ingredientes disponíveis, autenticação e listas de compras por usuário.</p>
+              <p class="project-detail"><strong>Engenharia verificada:</strong> rotas centralizadas, páginas por domínio, serviço Firebase, validação de formulários, autenticação por e-mail/telefone e atualização em tempo real com Firestore.</p>
+              <p class="project-caveat">O código auditado está na versão 0.1.0 e ainda possui rotas e navegações previstas sem implementação; por isso, é apresentado como protótipo.</p>
+              <ul class="tech-list" aria-label="Tecnologias de Receitas do Seu Jeito">
+                <li>Flutter</li><li>Dart</li><li>Firebase Auth</li><li>Cloud Firestore</li><li>Device Preview</li>
+              </ul>
+              <p class="private-source"><span aria-hidden="true">◈</span> Código analisado em repositório privado</p>
+            </div>
+
+            <div class="project-gallery project-gallery--compact" data-gallery>
+              <div class="gallery-topline">
+                <span>Espaço para telas</span>
+                <div class="gallery-buttons">
+                  <button type="button" data-gallery-prev aria-label="Mostrar imagem anterior"><span aria-hidden="true">←</span></button>
+                  <button type="button" data-gallery-next aria-label="Mostrar próxima imagem"><span aria-hidden="true">→</span></button>
+                </div>
+              </div>
+              <div class="gallery-track" data-gallery-track tabindex="0" aria-label="Imagens de Receitas do Seu Jeito">
+                <figure class="project-shot">
+                  <!-- Troque apenas o src por receitas-login.png quando a captura estiver pronta. -->
+                  <img src="provisorio.png" alt="Imagem provisória reservada para o login de Receitas do Seu Jeito" loading="lazy" decoding="async">
+                  <figcaption><span>01</span> Login · provisório</figcaption>
+                </figure>
+                <figure class="project-shot">
+                  <!-- Troque apenas o src por receitas-lista.png quando a captura estiver pronta. -->
+                  <img src="provisorio.png" alt="Imagem provisória reservada para a lista de compras de Receitas do Seu Jeito" loading="lazy" decoding="async">
+                  <figcaption><span>02</span> Lista · provisório</figcaption>
+                </figure>
+              </div>
+              <p class="gallery-hint"><span aria-hidden="true">↔</span> Arraste para navegar</p>
+            </div>
+          </article>
+
+          <article class="project project--secondary" id="quiz-bandeiras" aria-labelledby="quiz-title" data-reveal data-reveal-delay="1">
+            <div class="project-secondary-copy">
+              <div class="project-kicker">
+                <span class="status status--lab">Experimental · demo</span>
+                <span>Web</span>
+              </div>
+              <h3 id="quiz-title">Quiz de Bandeiras</h3>
+              <p class="project-summary">Quiz coletivo para grupos, com participantes dinâmicos, rodadas cronometradas, placar, ranking e cálculo lúdico de “QI coletivo”.</p>
+              <p class="project-detail"><strong>Engenharia verificada:</strong> estado manual, três fluxos de tela, carregamento assíncrono de JSON com fallback, pré-carga de imagens, timer, pontuação e integração com o Discord Embedded App SDK.</p>
+              <ul class="tech-list" aria-label="Tecnologias do Quiz de Bandeiras">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li><li>Discord SDK</li><li>Vercel</li>
+              </ul>
+              <div class="project-actions">
+                <a class="text-link" href="https://github.com/CGermanno/Quiz-de-Grupo" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do Quiz de Bandeiras no GitHub em nova aba">Código no GitHub <span aria-hidden="true">↗</span></a>
+                <a class="text-link text-link--muted" href="https://quiz-de-grupo.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demonstração do Quiz de Bandeiras em nova aba">Abrir demo <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="project-gallery project-gallery--compact" data-gallery>
+              <div class="gallery-topline">
+                <span>Espaço para telas</span>
+                <div class="gallery-buttons">
+                  <button type="button" data-gallery-prev aria-label="Mostrar imagem anterior"><span aria-hidden="true">←</span></button>
+                  <button type="button" data-gallery-next aria-label="Mostrar próxima imagem"><span aria-hidden="true">→</span></button>
+                </div>
+              </div>
+              <div class="gallery-track" data-gallery-track tabindex="0" aria-label="Imagens do Quiz de Bandeiras">
+                <figure class="project-shot">
+                  <!-- Troque apenas o src por quiz-inicio.png quando a captura estiver pronta. -->
+                  <img src="provisorio.png" alt="Imagem provisória reservada para a tela inicial do Quiz de Bandeiras" loading="lazy" decoding="async">
+                  <figcaption><span>01</span> Participantes · provisório</figcaption>
+                </figure>
+                <figure class="project-shot">
+                  <!-- Troque apenas o src por quiz-partida.png quando a captura estiver pronta. -->
+                  <img src="provisorio.png" alt="Imagem provisória reservada para uma rodada do Quiz de Bandeiras" loading="lazy" decoding="async">
+                  <figcaption><span>02</span> Rodada · provisório</figcaption>
+                </figure>
+              </div>
+              <p class="gallery-hint"><span aria-hidden="true">↔</span> Arraste para navegar</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="study-block" aria-labelledby="estudos-title" data-reveal>
+          <div class="study-intro">
+            <p class="section-index">Repositórios de estudo</p>
+            <h3 id="estudos-title">Fundamentos em prática</h3>
+            <p>Exercícios menores permanecem identificados como estudo. Eles mostram repertório e evolução, não experiência de produção.</p>
+          </div>
+          <div class="study-links">
+            <a href="https://github.com/CGermanno/Luizalabs-Back-end-com-Python" target="_blank" rel="noopener noreferrer" aria-label="Abrir estudos Luizalabs Back-end com Python no GitHub em nova aba">
+              <span>Python / CLI</span>
+              <strong>Bootcamp Back-end</strong>
+              <small>Sistema bancário, funções e organização de fluxo.</small>
+              <i aria-hidden="true">↗</i>
+            </a>
+            <a href="https://github.com/CGermanno/Detona-Ralph-com-JavaScript" target="_blank" rel="noopener noreferrer" aria-label="Abrir jogo Detona Ralph no GitHub em nova aba">
+              <span>JavaScript / DOM</span>
+              <strong>Jogos no navegador</strong>
+              <small>Eventos, estado, aleatoriedade, placar, timers e áudio.</small>
+              <i aria-hidden="true">↗</i>
+            </a>
+            <a href="https://github.com/CGermanno/trilha-java" target="_blank" rel="noopener noreferrer" aria-label="Abrir Trilha Java no GitHub em nova aba">
+              <span>Java / Terminal</span>
+              <strong>Fundamentos Java</strong>
+              <small>Entrada, saída, tipos e estrutura básica de programa.</small>
+              <i aria-hidden="true">↗</i>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section stack" id="tecnologias" aria-labelledby="tecnologias-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading--split" data-reveal>
+          <div>
+            <p class="section-index">03 / Tecnologias</p>
+            <h2 id="tecnologias-title">Ferramentas escolhidas<br>pelo problema.</h2>
+          </div>
+          <p>O agrupamento abaixo distingue tecnologias aplicadas em produto, protótipos e trilhas de aprendizagem.</p>
+        </header>
+
+        <div class="stack-grid">
+          <article class="stack-card stack-card--primary" data-reveal>
+            <div class="stack-card-head"><span>01</span><i>Aplicado em produto</i></div>
+            <h3>Mobile &amp; Android</h3>
+            <ul>
+              <li><strong>Flutter + Dart</strong><span>Interface e lógica mobile</span></li>
+              <li><strong>Kotlin + Android SDK</strong><span>Alarmes e serviços nativos</span></li>
+              <li><strong>Provider / ChangeNotifier</strong><span>Estado reativo</span></li>
+              <li><strong>MethodChannel</strong><span>Ponte Flutter ↔ Android</span></li>
+              <li><strong>Notificações e background</strong><span>AlarmManager, receivers e foreground services</span></li>
+            </ul>
+          </article>
+
+          <article class="stack-card" data-reveal data-reveal-delay="1">
+            <div class="stack-card-head"><span>02</span><i>Produto + protótipo</i></div>
+            <h3>Dados &amp; serviços</h3>
+            <ul>
+              <li><strong>Armazenamento local</strong><span>SharedPreferences e dados offline</span></li>
+              <li><strong>Firebase Authentication</strong><span>E-mail, Google e telefone</span></li>
+              <li><strong>Cloud Firestore</strong><span>Sincronização por usuário</span></li>
+              <li><strong>RevenueCat</strong><span>Compras e assinaturas</span></li>
+              <li><strong>Google Mobile Ads</strong><span>Monetização mobile</span></li>
+            </ul>
+          </article>
+
+          <article class="stack-card" data-reveal data-reveal-delay="2">
+            <div class="stack-card-head"><span>03</span><i>Web + laboratório</i></div>
+            <h3>Web &amp; fundamentos</h3>
+            <ul>
+              <li><strong>HTML semântico</strong><span>Estrutura acessível</span></li>
+              <li><strong>CSS responsivo</strong><span>Grid, Flexbox e animações</span></li>
+              <li><strong>JavaScript</strong><span>DOM, eventos e estado</span></li>
+              <li><strong>JSON e APIs de navegador</strong><span>Dados e integração</span></li>
+              <li><strong>Python e Java</strong><span>Trilhas de estudo</span></li>
+            </ul>
+          </article>
+
+          <article class="stack-card stack-card--accent" data-reveal>
+            <div class="stack-card-head"><span>04</span><i>Workflow</i></div>
+            <h3>Entrega &amp; IA aplicada</h3>
+            <ul>
+              <li><strong>Git + GitHub</strong><span>Versionamento e histórico</span></li>
+              <li><strong>Google Play</strong><span>Publicação e atualizações</span></li>
+              <li><strong>Vercel</strong><span>Demonstrações web</span></li>
+              <li><strong>ChatGPT, Codex e Gemini</strong><span>Pair programming e agentes</span></li>
+              <li><strong>GitHub Copilot</strong><span>Apoio em trilhas de estudo</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="trajetoria" aria-labelledby="trajetoria-title">
+      <div class="section-shell">
+        <header class="section-heading" data-reveal>
+          <p class="section-index">04 / Trajetória</p>
+          <h2 id="trajetoria-title">Formação, trabalho<br>e produto real.</h2>
+        </header>
+
+        <div class="journey-layout">
+          <div class="timeline" aria-label="Trajetória profissional e acadêmica">
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <p>Experiência profissional</p>
+              <h3>Brasil Center Comunicações</h3>
+              <small>Registro público no LinkedIn · Ribeirão Preto, SP</small>
+            </article>
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <p>2022 — 2025</p>
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <small>FATEC Ribeirão Preto</small>
+            </article>
+            <article class="timeline-item" data-reveal>
+              <span class="timeline-marker" aria-hidden="true"></span>
+              <p>Produto independente</p>
+              <h3>Desenvolvimento e manutenção de apps</h3>
+              <small>Remédio Certo e Respira publicados na Google Play</small>
+            </article>
+          </div>
+
+          <div class="journey-side">
+            <article class="transfer-card" data-reveal>
+              <p class="section-index">Do suporte ao produto</p>
+              <h3>O trabalho continua depois do deploy.</h3>
+              <p>As lojas e páginas públicas registram o ciclo pós-publicação: canal de suporte, leitura de avaliações, resposta a feedback, correções de bugs, estabilidade e novas versões.</p>
+              <ul>
+                <li>Contato com usuários</li>
+                <li>Análise de feedback</li>
+                <li>Troubleshooting e debugging</li>
+                <li>Comunicação de privacidade</li>
+                <li>Melhoria contínua</li>
+              </ul>
+            </article>
+
+            <div class="certifications" aria-labelledby="certificacoes-title" data-reveal>
+              <h3 id="certificacoes-title">Certificações verificadas</h3>
+              <ul>
+                <li><span>Oracle</span><strong>Programming with SQL</strong><small>jan. 2025</small></li>
+                <li><span>Oracle</span><strong>Database Design</strong></li>
+                <li><span>Cisco Networking Academy</span><strong>Cybersecurity Essentials</strong><small>jun. 2024</small></li>
+                <li><span>DIO</span><strong>Potência Tech iFood — Desenvolvimento de Jogos</strong><small>fev. 2024</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="processo" aria-labelledby="processo-title">
+      <div class="section-shell">
+        <header class="section-heading section-heading--split" data-reveal>
+          <div>
+            <p class="section-index">05 / Processo</p>
+            <h2 id="processo-title">Pequenos ciclos.<br>Responsabilidade inteira.</h2>
+          </div>
+          <p>Uma dinâmica iterativa, inspirada em Extreme Programming: feedback rápido, entregas pequenas, revisão constante e espaço para mudar de direção com evidência.</p>
+        </header>
+
+        <ol class="workflow-steps" aria-label="Etapas do processo de desenvolvimento">
+          <li data-reveal><span>01</span><strong>Ideia</strong><small>Observar contexto</small></li>
+          <li data-reveal data-reveal-delay="1"><span>02</span><strong>Problema</strong><small>Definir para quem</small></li>
+          <li data-reveal data-reveal-delay="2"><span>03</span><strong>Protótipo</strong><small>Reduzir incerteza</small></li>
+          <li data-reveal><span>04</span><strong>Construção</strong><small>Iterar em partes</small></li>
+          <li data-reveal data-reveal-delay="1"><span>05</span><strong>Testes</strong><small>Validar fluxos</small></li>
+          <li data-reveal data-reveal-delay="2"><span>06</span><strong>Feedback</strong><small>Escutar o uso</small></li>
+          <li data-reveal><span>07</span><strong>Refatoração</strong><small>Corrigir e simplificar</small></li>
+          <li data-reveal data-reveal-delay="1"><span>08</span><strong>Publicação</strong><small>Entregar de verdade</small></li>
+          <li data-reveal data-reveal-delay="2"><span>09</span><strong>Evolução</strong><small>Monitorar e melhorar</small></li>
+        </ol>
+
+        <div class="ai-workflow" data-reveal>
+          <div class="ai-symbol" aria-hidden="true">AI<span>/</span></div>
+          <div>
+            <p class="section-index">IA no desenvolvimento</p>
+            <h3>Pair programmer, agente e ferramenta de revisão.</h3>
+          </div>
+          <p>ChatGPT, Codex e Gemini apoiam implementação, debugging, refatoração, documentação e pesquisa técnica nos projetos mais complexos. A definição do produto, a arquitetura, os testes, a validação das integrações e a decisão de publicar permanecem sob minha responsabilidade.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato" aria-labelledby="contato-title">
+      <div class="section-shell contact-layout" data-reveal>
+        <div>
+          <p class="section-index">06 / Contato</p>
+          <h2 id="contato-title">Tem um problema real<br>para resolver?</h2>
+        </div>
+        <div class="contact-copy">
+          <p>Estou aberto a oportunidades de estágio, nível júnior e posições iniciais em desenvolvimento de software.</p>
+          <div class="contact-actions">
+            <a class="button button--primary" href="mailto:contatocarger@gmail.com">Enviar e-mail <span aria-hidden="true">↗</span></a>
+            <a class="button button--ghost" href="https://br.linkedin.com/in/carlos-germano-gasparelho-de-souza-473849280" target="_blank" rel="noopener noreferrer" aria-label="Conversar pelo LinkedIn em nova aba">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+          <a class="contact-email" href="mailto:contatocarger@gmail.com">contatocarger@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-layout">
+      <p><strong>Carlos Germano</strong> · Desenvolvedor de Software</p>
+      <p>Informações verificadas em LinkedIn, GitHub, código e Google Play · agosto de 2026</p>
+      <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript-message">O conteúdo está disponível sem JavaScript. Apenas animações, indicador de leitura e controles auxiliares das galerias ficam ocultos.</p>
+  </noscript>
+</body>
+</html>
