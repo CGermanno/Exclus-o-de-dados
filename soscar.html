@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Termos de Uso e Política de Privacidade do aplicativo SOS Motorista: Alerta por Voz.">
+    <title>Termos e Privacidade - SOS Motorista</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .sos-page header {
+            background: #c62828;
+        }
+
+        .sos-page .nav a,
+        .sos-page main h2,
+        .sos-page main h3 a {
+            color: #c62828;
+        }
+
+        .sos-page .nav a:hover {
+            color: #8e0000;
+        }
+
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            color: #664d03;
+        }
+
+        .info-box {
+            background-color: #ffebee;
+            border-left: 5px solid #c62828;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            color: #5f2120;
+        }
+
+        .legal-section {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .legal-section h3 {
+            margin-top: 28px;
+        }
+
+        .legal-section li {
+            margin-bottom: 8px;
+        }
+
+        .legal-section a {
+            overflow-wrap: anywhere;
+        }
+
+        .data-flow {
+            background: #f8f9fa;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 18px 22px;
+            margin: 18px 0;
+        }
+
+        .data-flow strong {
+            color: #8e0000;
+        }
+
+        .update-date {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 600px) {
+            .sos-page .nav {
+                padding: 14px 20px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="sos-page">
+
+    <header>
+        <div class="container">
+            <h1>SOS Motorista</h1>
+            <p>SOS Motorista: Alerta por Voz</p>
+            <p>Termos de Uso e Política de Privacidade</p>
+            <p class="update-date">Última atualização: 17 de novembro de
+                2026</p>
+        </div>
+    </header>
+
+    <nav class="nav" aria-label="Navegação dos termos e da política">
+        <a href="#termos">Termos de Uso</a>
+        <a href="#pagamentos">Pagamentos</a>
+        <a href="#privacidade">Privacidade (LGPD)</a>
+        <a href="#exclusao">Retenção e Exclusão</a>
+        <a href="#contato">Contato</a>
+        <a href="#legislacao">Legislação</a>
+    </nav>
+
+    <main class="container">
+
+        <section id="termos" class="legal-section">
+            <h2>1. Termos de Uso</h2>
+            <p>Estes Termos regulam o uso do aplicativo <strong>SOS Motorista: Alerta por Voz</strong>, também
+                identificado como <strong>SOS Motorista</strong> ou <strong>SOS Car</strong>. Ao instalar e utilizar o
+                aplicativo, o usuário declara que leu e concorda com estas condições.</p>
+
+            <div class="alert-box">
+                <strong>⚠️ IMPORTANTE</strong><br>
+                O SOS Motorista é uma ferramenta auxiliar de segurança. Ele não substitui a Polícia Militar, o
+                SAMU, o Corpo de Bombeiros ou qualquer outro serviço público de emergência. Não há garantia de que
+                o reconhecimento de voz, a captura, o envio ou a entrega das mensagens funcionarão em toda situação.
+                Em caso de risco, procure também os canais oficiais de emergência sempre que isso for possível.
+            </div>
+
+            <h3>1.1. Finalidade e funcionamento atual</h3>
+            <p>O aplicativo foi desenvolvido para auxiliar motoristas de aplicativo, taxistas e outros profissionais do
+                transporte a enviar um alerta a contatos previamente escolhidos. Na versão analisada, o fluxo funciona
+                da seguinte forma:</p>
+            <ol>
+                <li>o usuário informa seu nome e cadastra de um a quatro contatos de emergência;</li>
+                <li>o usuário abre o aplicativo e ativa o monitoramento pelo botão da tela;</li>
+                <li>o reconhecimento de voz Vosk processa o áudio no aparelho e identifica o gatilho configurado;</li>
+                <li>quando o gatilho é confirmado, o app tenta capturar áudio, quatro fotos, um vídeo de aproximadamente
+                    20 segundos e uma localização pontual;</li>
+                <li>as evidências disponíveis são salvas no aparelho e podem ser enviadas ao Firebase;</li>
+                <li>um serviço de backend usa a Twilio para tentar encaminhar alertas e evidências pelo WhatsApp aos
+                    contatos cadastrados.</li>
+            </ol>
+            <p>Falhas parciais podem ocorrer. O app pode gerar ou enviar somente parte do conjunto de evidências quando
+                algum sensor, permissão, arquivo, serviço ou conexão não estiver disponível.</p>
+
+            <h3>1.2. Monitoramento e limitações técnicas</h3>
+            <ul>
+                <li>O monitoramento precisa ser iniciado pelo usuário. O código analisado não implementa um serviço
+                    Android de execução contínua em segundo plano.</li>
+                <li>O reconhecimento pode falhar por ruído, pronúncia, distância, qualidade do microfone, desempenho do
+                    aparelho ou encerramento do aplicativo pelo Android.</li>
+                <li>O envio depende de internet, Firebase, Twilio, WhatsApp, permissões, armazenamento disponível e
+                    configurações do aparelho.</li>
+                <li>A aceitação de uma solicitação pelo backend ou pela Twilio não significa que a mensagem foi
+                    efetivamente entregue ou lida pelo contato.</li>
+                <li>Não há retentativa automática de envio. Uma falha pode ocorrer depois de parte das mensagens já ter
+                    sido aceita.</li>
+            </ul>
+
+            <h3>1.3. Permissões</h3>
+            <p>Conforme o recurso utilizado e a versão do Android, o aplicativo pode solicitar acesso a:</p>
+            <ul>
+                <li><strong>microfone</strong>, para reconhecimento de voz, buffer de áudio e gravação da ocorrência;</li>
+                <li><strong>câmera</strong>, para capturar fotos e vídeo após o acionamento;</li>
+                <li><strong>localização precisa ou aproximada</strong>, para obter coordenadas e gerar o link da
+                    ocorrência;</li>
+                <li><strong>armazenamento</strong>, para gravar arquivos na pasta Download em versões compatíveis do
+                    Android;</li>
+                <li><strong>internet</strong>, para autenticação técnica, upload e envio das mensagens.</li>
+            </ul>
+            <p>O usuário pode negar permissões, mas isso poderá impedir ou limitar as funções correspondentes.</p>
+
+            <h3>1.4. Responsabilidades do usuário</h3>
+            <p>O usuário deve fornecer telefones corretos, obter autorização dos contatos para receber alertas, testar
+                o funcionamento de forma responsável e manter meios alternativos de pedir ajuda. O app não deve ser
+                usado para alertas falsos, assédio, vigilância indevida ou gravação ilícita.</p>
+            <p>Durante uma ocorrência, imagens e vozes de terceiros podem ser registradas. O usuário deve considerar os
+                direitos dessas pessoas e utilizar as evidências apenas para finalidades legítimas de proteção,
+                comunicação da emergência, defesa de direitos ou atendimento de obrigação legal.</p>
+        </section>
+
+        <section id="pagamentos" class="legal-section">
+            <h2>2. Pagamentos e Assinaturas</h2>
+            <p>A instalação do aplicativo pela Google Play é prevista como gratuita. O uso comercial é previsto por
+                assinatura paga, com opções semestral e anual. Os preços, tributos, eventual período de teste e demais
+                condições serão os exibidos na Google Play antes da confirmação da compra.</p>
+
+            <div class="info-box">
+                <strong>Situação da versão analisada:</strong> o código-fonte revisado em 17 de novembro de 2026 não
+                continha uma integração de cobrança ou assinatura. As condições desta seção se aplicam quando a oferta
+                paga for efetivamente disponibilizada na Google Play.
+            </div>
+
+            <h3>2.1. Processamento e conta Google</h3>
+            <p>As compras e assinaturas, quando disponibilizadas, serão processadas pela Google Play e vinculadas à
+                Conta Google usada na compra. O desenvolvedor não recebe os dados completos do cartão ou de outro meio
+                de pagamento utilizado na plataforma.</p>
+
+            <h3>2.2. Renovação, cancelamento e reembolso</h3>
+            <p>Assinaturas recorrentes podem ser renovadas automaticamente conforme as condições apresentadas no
+                momento da compra. O cancelamento deve ser feito na Google Play, pela conta vinculada à assinatura. A
+                desinstalação do aplicativo não cancela a assinatura.</p>
+            <p>O cancelamento impede cobranças futuras, mas o acesso poderá continuar até o fim do período já pago,
+                conforme a modalidade contratada. Pedidos de reembolso serão analisados segundo as regras da Google
+                Play, o Código de Defesa do Consumidor e as demais normas aplicáveis.</p>
+        </section>
+
+        <section id="privacidade" class="legal-section">
+            <h2>3. Política de Privacidade (LGPD)</h2>
+            <p>Esta seção explica como os dados são tratados pelo SOS Motorista. O controlador responsável pelo
+                aplicativo é <strong>Carlos Germano Gasparelho de Souza</strong>, contatável pelo e-mail indicado na
+                seção 5.</p>
+
+            <h3>3.1. Dados mantidos no aparelho</h3>
+            <div class="data-flow">
+                <p><strong>Cadastro de emergência:</strong> nome do motorista e nome e telefone de um a quatro contatos,
+                    salvos nas preferências locais do aplicativo.</p>
+                <p><strong>Buffer de áudio:</strong> enquanto o monitoramento está ativo, o app mantém em memória um
+                    buffer circular correspondente a até 60 segundos. Antes de um acionamento, esse buffer não é um
+                    arquivo permanente.</p>
+                <p><strong>Arquivos de ocorrência:</strong> após o gatilho, áudio, fotos, vídeo e um relatório de
+                    localização podem ser gravados na pasta Download do Android. O relatório pode conter data, horário,
+                    coordenadas e endereço aproximado obtido pelo serviço de geocodificação do dispositivo.</p>
+            </div>
+            <p>O código analisado não mantém um banco de dados próprio com histórico estruturado de ocorrências. Os
+                arquivos que permanecem na pasta Download, contudo, formam registros locais e precisam ser gerenciados
+                pelo usuário.</p>
+
+            <h3>3.2. Microfone, reconhecimento de voz e gravação</h3>
+            <p>O microfone é aberto quando o usuário ativa o monitoramento. O fluxo de áudio é processado localmente
+                pelo Vosk para reconhecer o gatilho. O mesmo fluxo alimenta o buffer circular em memória.</p>
+            <p>Quando o gatilho é confirmado, o conteúdo do buffer é gravado em arquivo junto com o áudio captado
+                durante a ocorrência. Isso significa que o arquivo de evidência pode incluir sons e falas dos segundos
+                anteriores ao acionamento. O vídeo é inicialmente capturado sem áudio; o app tenta incorporar ao vídeo
+                o trecho correspondente da gravação.</p>
+            <p>Sem um acionamento, o reconhecimento é local e o buffer em memória não é enviado ao Firebase. O buffer
+                é sobrescrito continuamente enquanto o monitoramento permanece ativo.</p>
+
+            <h3>3.3. Dados enviados e compartilhados</h3>
+            <p>Quando ocorre um acionamento e há conexão, os seguintes tratamentos podem ocorrer:</p>
+            <ul>
+                <li>as fotos, o vídeo e o arquivo de áudio disponíveis são enviados ao <strong>Firebase
+                        Storage</strong>;</li>
+                <li>o <strong>Firebase Authentication</strong> cria ou reutiliza um identificador anônimo para autenticar o
+                    upload e o pedido de envio. Esse mecanismo técnico não é um cadastro ou login próprio do usuário;
+                </li>
+                <li>o nome do motorista, o telefone de cada contato, o link de localização e os links das mídias são
+                    enviados à função de backend no Firebase;</li>
+                <li>a <strong>Twilio</strong> recebe os dados necessários para encaminhar modelos de mensagem pelo
+                    <strong>WhatsApp</strong>;</li>
+                <li>os contatos de emergência recebem o alerta e, conforme a disponibilidade, imagens, vídeo,
+                    localização e link para o áudio.</li>
+            </ul>
+            <p>Os nomes dos contatos são mantidos no cadastro local e não aparecem no payload de envio identificado no
+                código analisado. O arquivo de texto com o relatório detalhado da localização também permanece no
+                aparelho; o backend recebe o link com as coordenadas.</p>
+            <p>O backend registra metadados técnicos de diagnóstico e entrega, como identificador da solicitação, etapa,
+                identificador da mensagem, status e código de erro. O código revisado evita registrar em log telefones,
+                corpos das mensagens e URLs das mídias.</p>
+
+            <h3>3.4. Finalidades e bases legais</h3>
+            <p>Os dados são tratados para configurar os destinatários, reconhecer o pedido de socorro, produzir e
+                preservar evidências, obter a localização, transmitir o alerta, prevenir abuso, manter a segurança do
+                serviço e diagnosticar falhas.</p>
+            <p>Conforme a situação concreta, o tratamento pode se apoiar na execução do serviço solicitado pelo usuário,
+                no consentimento para permissões e tratamentos que o exijam, na proteção da vida ou da incolumidade
+                física, no exercício regular de direitos, no legítimo interesse sujeito à avaliação de necessidade e
+                proporcionalidade, ou no cumprimento de obrigação legal.</p>
+
+            <h3>3.5. Dados de terceiros</h3>
+            <p>O usuário fornece dados dos contatos de emergência e pode registrar imagens, vozes, veículos, placas,
+                locais e outras informações de terceiros presentes na ocorrência. Esses dados devem ser usados somente
+                para a finalidade de segurança e para os demais usos autorizados pela legislação. Os contatos devem ser
+                informados de que receberão alertas e links de evidências.</p>
+
+            <h3>3.6. Segurança e riscos residuais</h3>
+            <p>O fluxo analisado utiliza HTTPS, autenticação anônima do Firebase, regras de armazenamento vinculadas ao
+                identificador autenticado e validação dos links pelo backend. Essas medidas reduzem riscos, mas nenhum
+                sistema é totalmente seguro.</p>
+            <p>Os links de download do Firebase contêm um token. Quem receber ou obtiver esse link poderá conseguir
+                acessar a mídia enquanto o link continuar válido. Os contatos também podem salvar, encaminhar ou capturar
+                as mensagens recebidas no WhatsApp, fora do controle direto do desenvolvedor.</p>
+
+            <h3>3.7. Direitos do titular</h3>
+            <p>Nos limites da LGPD, o titular pode solicitar confirmação do tratamento, acesso, correção, informações
+                sobre compartilhamento, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade
+                quando aplicável, revogação do consentimento e revisão das decisões cabíveis. A solicitação pode ser
+                enviada pelo canal da seção 5 e poderá exigir verificação razoável de identidade e titularidade.</p>
+        </section>
+
+        <section id="exclusao" class="legal-section">
+            <h2>4. Retenção e Exclusão de Dados</h2>
+
+            <div class="alert-box">
+                <strong>Não existe um prazo automático de retenção definido no código analisado.</strong> A
+                desinstalação, por si só, não garante a exclusão dos arquivos da pasta Download, das mídias enviadas ao
+                Firebase nem das mensagens e cópias recebidas pelos contatos no WhatsApp.
+            </div>
+
+            <h3>4.1. Dados locais</h3>
+            <ul>
+                <li>O nome do motorista e os contatos podem ser removidos ao limpar os dados do aplicativo nas
+                    configurações do Android ou ao desinstalar o app, de acordo com o comportamento do sistema.</li>
+                <li>Fotos, vídeos, áudios e relatórios gravados na pasta Download devem ser localizados e excluídos
+                    manualmente pelo usuário. Eles podem permanecer mesmo após a desinstalação.</li>
+            </ul>
+
+            <h3>4.2. Dados remotos</h3>
+            <p>O código analisado envia mídias ao Firebase Storage, mas não oferece na interface uma função para apagar
+                esses arquivos remotos. Para solicitar acesso ou exclusão, envie um e-mail para
+                <a href="mailto:contatocarger@gmail.com">contatocarger@gmail.com</a>, informando, quando possível, a data
+                e o horário aproximados da ocorrência e dados suficientes para localizar o registro. Evite enviar
+                evidências sensíveis desnecessárias no primeiro contato.
+            </p>
+            <p>A solicitação será atendida conforme a possibilidade de identificação técnica, as obrigações legais e a
+                necessidade de preservação para exercício de direitos. Dados mantidos pela Twilio, pelo WhatsApp, pela
+                Google ou pelos destinatários seguem também os controles e políticas desses respectivos agentes.</p>
+
+            <h3>4.3. Assinatura</h3>
+            <p>A exclusão de dados do aplicativo e o cancelamento de uma assinatura são operações diferentes. Quando a
+                assinatura estiver disponível, ela deverá ser cancelada separadamente na Google Play.</p>
+        </section>
+
+        <section id="contato" class="legal-section">
+            <h2>5. Contato</h2>
+            <p><strong>Desenvolvedor e controlador:</strong> Carlos Germano Gasparelho de Souza</p>
+            <p><strong>E-mail:</strong> <a href="mailto:contatocarger@gmail.com">contatocarger@gmail.com</a></p>
+            <p>Use este canal para dúvidas sobre o aplicativo, exercício de direitos de privacidade, solicitações de
+                acesso ou exclusão e assuntos relacionados ao serviço.</p>
+        </section>
+
+        <section id="legislacao" class="legal-section">
+            <h2>6. Legislação Aplicável</h2>
+            <p>Estes Termos e esta Política são interpretados de acordo com a legislação brasileira, especialmente:</p>
+            <ul>
+                <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+                        target="_blank" rel="noopener noreferrer">Lei Geral de Proteção de Dados Pessoais — Lei nº
+                        13.709/2018</a>;</li>
+                <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank"
+                        rel="noopener noreferrer">Código de Defesa do Consumidor — Lei nº 8.078/1990</a>;</li>
+                <li><a href="https://support.google.com/googleplay/android-developer/answer/10144311?hl=pt-BR"
+                        target="_blank" rel="noopener noreferrer">Política de Dados do Usuário do Google Play</a> e
+                    demais políticas aplicáveis da plataforma.</li>
+            </ul>
+            <p>Nenhuma disposição destes documentos limita direitos obrigatórios do consumidor ou do titular de dados.
+                Eventuais conflitos serão solucionados pelos meios e foros admitidos pela legislação aplicável,
+                inclusive o foro do domicílio do consumidor quando cabível.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Carlos Germano</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -4,6 +4,8 @@
     --primary-dark: #1565C0;
     --secondary: #2E7D32;
     --secondary-dark: #1B5E20;
+    --emergency: #C62828;
+    --emergency-dark: #8E0000;
     --dark: #1e293b;
     --gray-600: #475569;
     --gray-400: #94a3b8;
@@ -137,12 +139,28 @@ header {
 }
 
 /* Cores específicas para cada app */
-.app-card:first-child .app-header h3 {
+.app-card.remedio-app .app-header h3 {
     color: var(--primary);
 }
 
-.app-card:last-child .app-header h3 {
+.app-card.respira-app .app-header h3 {
     color: var(--secondary);
+}
+
+.app-card.sos-app .app-header h3 {
+    color: var(--emergency);
+}
+
+.app-card.remedio-app:hover {
+    border-color: var(--primary);
+}
+
+.app-card.respira-app:hover {
+    border-color: var(--secondary);
+}
+
+.app-card.sos-app:hover {
+    border-color: var(--emergency);
 }
 
 .app-content {
@@ -179,7 +197,7 @@ header {
 }
 
 /* Tratamento especial para a imagem do Remédio (remover fundo branco via CSS) */
-.app-card:first-child .screenshot-box img {
+.app-card.remedio-app .screenshot-box img {
     /* Remove fundo branco com mix-blend-mode */
     mix-blend-mode: multiply;
     background-color: transparent;
@@ -192,13 +210,18 @@ header {
 }
 
 /* Ajuste específico para a imagem do Remédio */
-.app-card:first-child .screenshot-box {
+.app-card.remedio-app .screenshot-box {
     background: linear-gradient(145deg, #e3f2fd, #bbdef5); /* fundo azul suave que combina */
 }
 
 /* App Respira - sem modificações */
-.app-card:last-child .screenshot-box {
+.app-card.respira-app .screenshot-box {
     background: linear-gradient(145deg, #e8f5e9, #c8e6c9); /* fundo verde suave */
+}
+
+/* App SOS Motorista - destaque de emergência sem alterar os demais cards */
+.app-card.sos-app .screenshot-box {
+    background: linear-gradient(145deg, #ffebee, #ffcdd2);
 }
 
 .tag {
@@ -214,9 +237,14 @@ header {
     margin-bottom: 16px;
 }
 
-.app-card:last-child .tag {
+.app-card.respira-app .tag {
     background: rgba(46, 125, 50, 0.08);
     color: var(--secondary);
+}
+
+.app-card.sos-app .tag {
+    background: rgba(198, 40, 40, 0.08);
+    color: var(--emergency);
 }
 
 .app-content p {
@@ -255,8 +283,23 @@ header {
     color: white;
 }
 
-.app-card:last-child .btn-store {
+.app-card.respira-app .btn-store {
     background: var(--secondary);
+}
+
+.app-card.sos-app .btn-store {
+    background: var(--emergency);
+}
+
+.btn-disabled {
+    cursor: not-allowed;
+    opacity: 0.78;
+    user-select: none;
+}
+
+.btn-disabled:hover {
+    filter: none;
+    transform: none;
 }
 
 .btn-store:hover {
@@ -323,7 +366,7 @@ footer a:hover {
 
 /* Suporte para navegadores mais antigos */
 @supports not (mix-blend-mode: multiply) {
-    .app-card:first-child .screenshot-box img {
+    .app-card.remedio-app .screenshot-box img {
         opacity: 0.95;
         filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
     }
